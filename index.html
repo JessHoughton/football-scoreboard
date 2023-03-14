@@ -1,0 +1,41 @@
+<html>
+    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <!-- <h1>Football Scoreboard</h1> -->
+        
+        <div class="container">
+            
+        <!-- Home Section -->
+ 
+            <div>
+                <h3>HOME</h3>
+                <h2 id="home-score-el">0</h2>
+                <button class="homescore-btn" onclick="increaseHomeScore1()">+1</button>
+                <button class="homescore-btn" onclick="increaseHomeScore2()">+2</button>
+                <button class="homescore-btn" onclick="increaseHomeScore3()">+3</button>
+            </div>
+            
+        <!-- Timer Section  --> 
+        
+            <div class="timer-section">
+                <h2 id="timer-el">00:00</h2>
+                <button id="start-btn" onclick="start()">Start</button>
+                <button id="pause-btn" onclick="pause()">Pause</button>
+                <button id="reset-btn" onclick="reset()">Reset</button>
+            </div> 
+            
+        <!-- Away Section -->
+            
+            <div>
+                <h3>AWAY</h3>
+                <h2 id="away-score-el">0</h2>
+                <button class="awayscore-btn" onclick="increaseAwayScore1()">+1</button>
+                <button class="awayscore-btn" onclick="increaseAwayScore2()">+2</button>
+                <button class="awayscore-btn" onclick="increaseAwayScore3()">+3</button>
+            </div>
+        </div>
+        <script src="index.js"></script>
+    </body>
+</html>
